@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Barbearia Natan Cortes</title> -->
+    <title>Barbearia Natan Cortes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,6 +14,7 @@
             background: url('WhatsApp Image 2024-11-17 at 12.50.02.jpeg') no-repeat center center fixed;
             background-size: cover;
         }
+
         header {
             background-color: rgba(38, 0, 255, 0.9);
             color: #00ff4c;
@@ -20,6 +22,7 @@
             padding: 1rem;
             animation: slideDown 1s ease-out;
         }
+
         nav {
             display: flex;
             justify-content: center;
@@ -27,46 +30,56 @@
             animation: fadeIn 1s ease-out 0.5s forwards;
             opacity: 0;
         }
+
         nav a {
             color: #fa00fa;
             padding: 1rem;
             text-decoration: none;
         }
+
         section {
             padding: 2rem;
             background-color: rgba(80, 80, 80, 0.568);
             margin: 1rem;
             border-radius: 10px;
         }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .gallery img {
+
+        .gallery img,
+        .gallery video {
             width: 100%;
             max-width: 200px;
             margin: 0.5rem;
             border-radius: 10px;
         }
+
         footer {
             background-color: #222424;
             color: #000000;
             text-align: center;
             padding: 1rem;
         }
+
         form {
             display: flex;
             flex-direction: column;
             max-width: 400px;
             margin: auto;
         }
-        input, textarea {
+
+        input,
+        textarea {
             margin-bottom: 1rem;
             padding: 0.5rem;
             border: 1px solid #e70000;
             border-radius: 5px;
         }
+
         button {
             padding: 0.5rem;
             background-color: #dbff0f;
@@ -75,6 +88,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .whatsapp-button {
             position: fixed;
             bottom: 20px;
@@ -92,36 +106,53 @@
             justify-content: center;
             align-items: center;
         }
+
         .whatsapp-button img {
             width: 25px;
             height: 25px;
         }
+
         @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
+
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
                 align-items: center;
             }
-            .gallery img {
+
+            .gallery img,
+            .gallery video {
                 max-width: 150px;
             }
+
             form {
                 width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Barbearia Natan Cortes</h1>
-
         <p>criado por Thiago Empresa: Thinformatica</p>
     </header>
     <nav>
@@ -144,9 +175,9 @@
             <img src="WhatsApp Image 2024-11-17 at 12.51.49 (1).jpeg" alt="Imagem 6">
             <img src="WhatsApp Image 2024-11-17 at 12.51.46 - Copia.jpeg" alt="Imagem 6">
             <video controls>
-                <source src="WhatsApp Video 2024-11-17 at 18.17.34.mp4" type="video/mp4"> Seu navegador não suporta a tag de vídeo.
+                <source src="WhatsApp Video 2024-11-17 at 18.17.34.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
             </video>
-           
         </div>
     </section>
     <section>
@@ -164,8 +195,6 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    <section>
-       
     <footer>
         <p>&copy; th informatica 2024 Barbearia Natan Cortes. Todos os direitos reservados.</p>
     </footer>
@@ -173,4 +202,5 @@
         <img src="download.png" alt="WhatsApp">
     </button>
 </body>
+
 </html>
