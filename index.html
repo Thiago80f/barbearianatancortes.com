@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Natan Cortes</title>
     <link rel="icon" href="WhatsApp Image 2024-11-17 at 12.50.02 (1).jpeg" type="image/png">
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -189,7 +188,7 @@
     </section>
     <section>
         <h2>Agendamento</h2>
-        <form action="https://formspree.io/f/xrbglzqa" method="POST">
+        <form id="whatsappForm">
             <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
             <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
             <input type="text" id="telefone" name="telefone" placeholder="Seu telefone" required>
@@ -203,6 +202,22 @@
     <button class="whatsapp-button" onclick="window.location.href='https://wa.me/5535998329854'">
         <img src="download.png" alt="WhatsApp">
     </button>
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            var whatsappMessage = 'Nome: ' + nome + '%0A' +
+                'E-mail: ' + email + '%0A' +
+                'Telefone: ' + telefone + '%0A' +
+                'Mensagem: ' + mensagem;
+
+            window.location.href = 'https://wa.me/5535998329854?text=' + whatsappMessage;
+        });
+    </script>
 </body>
 
 </html>
