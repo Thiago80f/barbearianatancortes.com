@@ -190,7 +190,6 @@
         <h2>Agendamento</h2>
         <form id="whatsappForm">
             <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
             <input type="text" id="telefone" name="telefone" placeholder="Seu telefone" required>
             <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
@@ -206,12 +205,10 @@
         document.getElementById('whatsappForm').addEventListener('submit', function (event) {
             event.preventDefault();
             var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
             var telefone = document.getElementById('telefone').value;
             var mensagem = document.getElementById('mensagem').value;
 
             var whatsappMessage = 'Nome: ' + nome + '%0A' +
-                'E-mail: ' + email + '%0A' +
                 'Telefone: ' + telefone + '%0A' +
                 'Mensagem: ' + mensagem;
 
